@@ -1,7 +1,7 @@
 #Configure remote state for terraform cloud
 terraform {
   backend "remote" {
-    organization = "agarciamiravet"
+    organization = "recetasdevops"
 
     workspaces {
       name = "azuredevops"
