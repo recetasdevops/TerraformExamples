@@ -1,3 +1,14 @@
+#Configure remote state for terraform cloud
+terraform {
+  backend "remote" {
+    organization = "agarciamiravet"
+
+    workspaces {
+      name = "azuredevops"
+    }
+  }
+}
+
 #Definimos el resource group a crear
 resource "azurerm_resource_group" "resource_group_test" {
   name     = "TFRecetasDevOpsAppServiceRG"
